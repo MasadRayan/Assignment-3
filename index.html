@@ -25,8 +25,33 @@
 
 <body class="sora-regular">
     <!-- header section -->
-    <header>
-
+    <header class="md:container mx-auto mt-8 mb-40">
+        <!-- navbar -->
+         <nav class="flex justify-around items-center border-b-2 border-green-500 md:border-b-0 pb-4 md:p-0">
+            <!-- image part -->
+            <div>
+                <img src="images/logo-header.png" alt="">
+            </div>
+            <!-- link part -->
+             <div>
+                <ul class="hidden md:flex md:justify-around md:items-center md:gap-8">
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+             </div>
+             <!-- btn part -->
+              <div class="hidden md:flex md:items-center">
+                <i class="text-xl fa-solid mr-5 fa-magnifying-glass"></i>
+                <i class="text xl fa-solid mr-5 fa-cart-shopping"></i>
+                <button class="py-3 px-6 text-lg rounded-xl border border-1 border-[#179800] mr-4">Login</button>
+                <button class="bg-[#179800] text-white py-3 px-6 text-lg rounded-xl">Register</button>
+              </div>
+              <!-- small device -->
+               <div class="md:hidden">
+                <i class="text-2xl fa-solid fa-bars"></i>
+               </div>
+         </nav>
     </header>
 
     <!-- main section -->
