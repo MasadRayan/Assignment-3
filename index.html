@@ -20,28 +20,29 @@
             font-optical-sizing: auto;
             font-style: normal;
         }
-        .rotate-image
-        {
+
+        .rotate-image {
             animation: myfirst 1.5s infinite linear;
         }
-        @keyframes myfirst
-        {
-            0%{
+
+        @keyframes myfirst {
+            0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(360deg);
             }
         }
-       
     </style>
 </head>
 
 <body class="sora-regular">
     <!-- header section -->
-    <header class="">
+    <header class="mb-16 md:mb-28">
         <!-- navbar -->
-        <nav class="flex justify-around items-center border-b-2 border-green-500 md:border-b-0 pb-4 md:p-0 md:container mx-auto mt-8 mb-20 md:mb-40 ">
+        <nav
+            class="flex justify-around items-center border-b-2 border-green-500 md:border-b-0 pb-4 md:p-0 md:container mx-auto mt-8 mb-20 md:mb-40 ">
             <!-- image part -->
             <div>
                 <img src="images/logo-header.png" alt="">
@@ -84,7 +85,45 @@
 
     <!-- main section -->
     <main>
-
+        <!-- services section -->
+        <section class="md:container mx-auto mt-8 mb-20 md:mb-40">
+            <h2 class="text-[#179800] font-semibold text-3xl mb-12">
+                Services
+            </h2>
+            <!-- cards -->
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- card 1 -->
+                 <div class="flex flex-col justify-center items-center  bg-[#EFEBE3] rounded-xl py-8">
+                    <img class="mb-6 bg-white rounded-full p-4" src="images/service.png" alt="">
+                    <h3 class="mb-3 font-semibold text-2xl">
+                        24/7 Services 
+                    </h3>
+                    <p class="text-center w-5/6 py-2">
+                        We provide all time delivary service <br> and we ensure that our products are freshly delivered.
+                    </p>
+                 </div>
+                <!-- card 2 -->
+                 <div class="flex flex-col justify-center items-center  bg-[#EFEBE3] rounded-xl py-8">
+                    <img class="mb-6 bg-white rounded-full p-4" src="images/delivery.png" alt="">
+                    <h3 class="mb-3 font-semibold text-2xl">
+                        24/7 Services 
+                    </h3>
+                    <p class="text-center w-5/6 py-2">
+                        We provide all time delivary service <br> and we ensure that our products are freshly delivered.
+                    </p>
+                 </div>
+                <!-- card 3 -->
+                 <div class="flex flex-col justify-center items-center  bg-[#EFEBE3] rounded-xl py-8">
+                    <img class="mb-6 bg-white rounded-full p-4" src="images/healthy.png" alt="">
+                    <h3 class="mb-3 font-semibold text-2xl">
+                        24/7 Services 
+                    </h3>
+                    <p class="text-center w-5/6 py-2">
+                        We provide all time delivary service <br> and we ensure that our products are freshly delivered.
+                    </p>
+                 </div>
+             </div>
+        </section>
     </main>
 
     <!-- footer section -->
